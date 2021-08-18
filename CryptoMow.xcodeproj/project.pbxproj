@@ -11,6 +11,7 @@
 		1D381F9C26BF285F003B54CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D381F9B26BF285F003B54CE /* ContentView.swift */; };
 		1D381F9E26BF2862003B54CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D381F9D26BF2862003B54CE /* Assets.xcassets */; };
 		1D381FA126BF2862003B54CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D381FA026BF2862003B54CE /* Preview Assets.xcassets */; };
+		5C7755250886E6A07813A5CB /* Pods_CryptoMow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3786D7DB5A9F41D5A22A43C7 /* Pods_CryptoMow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		1D381F9D26BF2862003B54CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D381FA026BF2862003B54CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D381FA226BF2862003B54CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3786D7DB5A9F41D5A22A43C7 /* Pods_CryptoMow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoMow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F697711218437AE4EDA3B3F /* Pods-CryptoMow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoMow.release.xcconfig"; path = "Target Support Files/Pods-CryptoMow/Pods-CryptoMow.release.xcconfig"; sourceTree = "<group>"; };
+		A485932BFF04247219A20B3F /* Pods-CryptoMow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoMow.debug.xcconfig"; path = "Target Support Files/Pods-CryptoMow/Pods-CryptoMow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7755250886E6A07813A5CB /* Pods_CryptoMow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0106B88A6B28FA93376610EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3786D7DB5A9F41D5A22A43C7 /* Pods_CryptoMow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C033FDF38D456B3AF026E0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A485932BFF04247219A20B3F /* Pods-CryptoMow.debug.xcconfig */,
+				5F697711218437AE4EDA3B3F /* Pods-CryptoMow.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1D381F8D26BF285F003B54CE = {
 			isa = PBXGroup;
 			children = (
 				1D381F9826BF285F003B54CE /* CryptoMow */,
 				1D381F9726BF285F003B54CE /* Products */,
+				0C033FDF38D456B3AF026E0C /* Pods */,
+				0106B88A6B28FA93376610EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +77,9 @@
 		1D381F9826BF285F003B54CE /* CryptoMow */ = {
 			isa = PBXGroup;
 			children = (
+				1DC4A88C26CA329A007C66DC /* viewModel  */,
+				1DC4A88B26CA3273007C66DC /* view  */,
+				1DC4A88A26CA326A007C66DC /* model  */,
 				1D381F9926BF285F003B54CE /* CryptoMowApp.swift */,
 				1D381F9B26BF285F003B54CE /* ContentView.swift */,
 				1D381F9D26BF2862003B54CE /* Assets.xcassets */,
@@ -69,6 +97,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1DC4A88A26CA326A007C66DC /* model  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "model ";
+			sourceTree = "<group>";
+		};
+		1DC4A88B26CA3273007C66DC /* view  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "view ";
+			sourceTree = "<group>";
+		};
+		1DC4A88C26CA329A007C66DC /* viewModel  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "viewModel ";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D381FA526BF2862003B54CE /* Build configuration list for PBXNativeTarget "CryptoMow" */;
 			buildPhases = (
+				73AAAD77B321BDFCAE1B26AB /* [CP] Check Pods Manifest.lock */,
 				1D381F9226BF285F003B54CE /* Sources */,
 				1D381F9326BF285F003B54CE /* Frameworks */,
 				1D381F9426BF285F003B54CE /* Resources */,
+				F932BC45B96ABA92708ACC2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +183,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73AAAD77B321BDFCAE1B26AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoMow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F932BC45B96ABA92708ACC2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoMow/Pods-CryptoMow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoMow/Pods-CryptoMow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoMow/Pods-CryptoMow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D381F9226BF285F003B54CE /* Sources */ = {
@@ -264,6 +357,7 @@
 		};
 		1D381FA626BF2862003B54CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A485932BFF04247219A20B3F /* Pods-CryptoMow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +380,7 @@
 		};
 		1D381FA726BF2862003B54CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F697711218437AE4EDA3B3F /* Pods-CryptoMow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

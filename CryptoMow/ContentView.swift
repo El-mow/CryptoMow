@@ -8,26 +8,61 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        TabView {
-
-            Text("")
-            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/).tabItem {
-                    Image(systemName: "heart.fill")
-                    Text("Favourites")
+    fileprivate func extractedFunc() -> some View {
+        return HStack(spacing : 46) {
+            
+            VStack(alignment: .leading, spacing : 10){
+                Text("market cap")
+                    .foregroundColor(Color.init(red: 161/255, green: 156/255, blue: 156/255))
+                Text("$B").foregroundColor(.white)
+                Text("^%")
+                    .foregroundColor(.green)
             }
-            Text("Friends Screen")
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Friends")
+            VStack(alignment: .leading, spacing : 10){
+                Text(" 24h volume ")
+                    .foregroundColor(Color.init(red: 161/255, green: 156/255, blue: 156/255))
+                Text("$B").foregroundColor(.white)
+                Text("^%")
+                    .foregroundColor(.green)
             }
-            Text("Nearby Screen")
-                .tabItem {
-                    Image(systemName: "mappin.circle.fill")
-                    Text("Nearby")
+            VStack(alignment: .leading, spacing : 10){
+                Text("BTC Doimnance ")
+                    .foregroundColor(Color.init(red: 161/255, green: 156/255, blue: 156/255))
+                Text("$B").foregroundColor(.white)
+                Text("^%")
+                    .foregroundColor(.green)
             }
-        }.background(Color.black)
+            
+        }.position(x: 217, y: 180)
     }
+    
+    var body: some View {
+        ZStack{
+            Color( red: 38/255, green:38/255 , blue: 46/255, opacity: 1)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            HStack(spacing :90) {
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image("backIcon").resizable()
+                        .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                })
+                Text("Live prices").foregroundColor(.white)
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image("bellIcon ")
+                        .resizable()
+                        .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                })
+            }.position(x: 200, y: 50)
+            
+            extractedFunc()
+            
+        }
+  
+    
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

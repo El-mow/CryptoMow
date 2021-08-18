@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CryptoMow.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:CryptoMow"
+      name = "CryptoMow">
+      <Group
+         location = "group:Assets.xcassets"
+         name = "Assets.xcassets">
+         <Group
+            location = "group:AppIcon.appiconset"
+            name = "AppIcon.appiconset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:AccentColor.colorset"
+            name = "AccentColor.colorset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:bellIcon .imageset"
+            name = "bellIcon .imageset">
+            <FileRef
+               location = "group:bell.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:backIcon.imageset"
+            name = "backIcon.imageset">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:previous.png">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Contents.json">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:view "
+         name = "view ">
+      </Group>
+      <Group
+         location = "group:Preview Content"
+         name = "Preview Content">
+         <Group
+            location = "group:Preview Assets.xcassets"
+            name = "Preview Assets.xcassets">
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:viewModel "
+         name = "viewModel ">
+      </Group>
+      <FileRef
+         location = "group:CryptoMowApp.swift">
+      </FileRef>
+      <FileRef
+         location = "group:ContentView.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Info.plist">
+      </FileRef>
+      <Group
+         location = "group:model "
+         name = "model ">
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
